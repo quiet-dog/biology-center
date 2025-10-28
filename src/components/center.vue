@@ -120,12 +120,12 @@ const address = ref([{
   img: JiaoBiao,
   title: "北京",
   total: 0,
-  link: "https://" + location.hostname + ":7677",
+  link: "https://" + location.hostname + ":7677/#/home",
   labels: [{
     name: "北京",
     url: "https://" + location.hostname + ":7677/api/manage/event/getTodayAlarmCount",
     total: 0,
-    link: "https://" + location.hostname + ":7677",
+    link: "https://" + location.hostname + ":7677/#/home",
     show: true
   }]
 }, {
@@ -133,12 +133,12 @@ const address = ref([{
   top: adaptiveHeight(1100),
   img: JiaoBiao,
   title: "长春",
-  link: "https://" + location.hostname + ":17677",
+  link: "https://" + location.hostname + ":17677/#/home",
   labels: [{
     name: "长春",
     url: "https://" + location.hostname + ":17677/api/manage/event/getTodayAlarmCount",
     total: 0,
-    link: "https://" + location.hostname + ":17677",
+    link: "https://" + location.hostname + ":17677/#/home",
     show: true
   }],
   total: 0,
