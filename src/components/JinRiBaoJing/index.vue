@@ -33,7 +33,7 @@ const dataSource = ref([
     {
         address: "哈兽研",
         num: 0,
-        url: "https://" + location.hostname + ":27677"+"/api/manage/event/getTodayAlarmCount"
+        url: "https://" + location.hostname + ":27677"+"/api/manage/smAlarm/getJinRiAlarmNum"
     }
 ])
 

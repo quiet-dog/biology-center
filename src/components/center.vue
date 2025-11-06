@@ -97,19 +97,19 @@ const address = ref([{
     show: true
   }, {
     name: "哈兽研",
-    url: "https://" + location.hostname + ":27677/api/manage/swAlarm/getJinRiAlarmNum",
+    url: "https://" + location.hostname + ":27677/api/manage/smAlarm/getJinRiAlarmNum",
     total: 0,
     link: "https://" + location.hostname + ":27677/#/ketisan",
     show: true
   }, {
     name: "中疾控",
-    url: "https://" + location.hostname + ":27677/api/manage/swAlarm/jinRiBaoJingNum",
+    url: "https://" + location.hostname + ":27677/api/manage/smAlarm/jinRiBaoJingNum",
     total: 0,
     link: "https://" + location.hostname + ":27677/#/ketisi",
     show: true
   }, {
     name: "建研院",
-    url: "https://" + location.hostname + ":27677/api/manage/swAlarm/jinRiBaoJingNum",
+    url: "https://" + location.hostname + ":27677/api/manage/smAlarm/jinRiBaoJingNum",
     total: 0,
     link: "https://" + location.hostname + ":27677/#/ketisi",
     show: false
@@ -154,6 +154,7 @@ const getAllEventTimer = useIntervalFn(() => {
         headers: { Authorization: "Bearer MASTER_TOKEN_123456" }
       })
       if (res.data?.data?.num) {
+      	label.total = res.data.data.num;
         num += res.data.data.num
       }
     }
