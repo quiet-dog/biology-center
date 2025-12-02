@@ -95,25 +95,15 @@ const address = ref([{
     total: 0,
     link: "https://" + location.hostname + ":27677/#/home",
     show: true
-  }, {
-    name: "哈兽研",
-    url: "https://" + location.hostname + ":27677/api/manage/smAlarm/getJinRiAlarmNum",
-    total: 0,
-    link: "https://" + location.hostname + ":27677/#/ketisan",
-    show: true
-  }, {
-    name: "中疾控",
-    url: "https://" + location.hostname + ":27677/api/manage/smAlarm/jinRiBaoJingNum",
-    total: 0,
-    link: "https://" + location.hostname + ":27677/#/ketisi",
-    show: true
-  }, {
-    name: "建研院",
-    url: "https://" + location.hostname + ":27677/api/manage/smAlarm/jinRiBaoJingNum",
-    total: 0,
-    link: "https://" + location.hostname + ":27677/#/ketisi",
-    show: false
-  }]
+  },
+  //  {
+  //   name: "建研院",
+  //   url: "https://" + location.hostname + ":27677/api/manage/smAlarm/jinRiBaoJingNum",
+  //   total: 0,
+  //   link: "https://" + location.hostname + ":27677/#/ketisi",
+  //   show: false
+  // }
+]
 }, {
   left: adaptiveWidth(6600),
   top: adaptiveHeight(1675),
@@ -126,6 +116,12 @@ const address = ref([{
     url: "https://" + location.hostname + ":7677/api/manage/event/getTodayAlarmCount",
     total: 0,
     link: "https://" + location.hostname + ":7677/#/home",
+    show: true
+  }, {
+    name: "中疾控",
+    url: "https://" + location.hostname + ":27677/api/manage/smAlarm/jinRiBaoJingNum",
+    total: 0,
+    link: "https://" + location.hostname + ":27677/#/ketisi",
     show: true
   }]
 }, {
@@ -142,6 +138,28 @@ const address = ref([{
     show: true
   }],
   total: 0,
+},{
+  left: adaptiveWidth(7800),
+  top: adaptiveHeight(800),
+  img: JiaoBiao,
+  title: "哈尔滨",
+  link: "https://" + location.hostname + ":17677/#/home",
+  total:0,
+  labels: [{
+    name: "哈尔滨",
+    url: "https://" + location.hostname + ":17677/api/manage/event/getTodayAlarmCount",
+    total: 0,
+    link: "https://" + location.hostname + ":17677/#/home",
+    show: true
+  },
+  // {
+  //   name: "哈兽研",
+  //   url: "https://" + location.hostname + ":27677/api/manage/smAlarm/getJinRiAlarmNum",
+  //   total: 0,
+  //   link: "https://" + location.hostname + ":27677/#/ketisan",
+  //   show: true
+  // }
+]
 }])
 
 const getAllEventTimer = useIntervalFn(() => {

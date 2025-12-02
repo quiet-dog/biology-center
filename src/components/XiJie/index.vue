@@ -53,6 +53,15 @@ function getImgUrl() {
         return 长春
     }
 }
+const targetTitle = computed(()=>{
+     if (address === "北京") {
+        return "北京-北京生物制品研究所有限责任公司-高生物安全风险车间智能化风险管理和实时动态监管平台"
+    } else if (address === "武汉") {
+        return "武汉-武汉生物制品研究所有限责任公司-高生物安全风险车间生物安全关键技术研究数字孪生平台"
+    } else if (address === "长春") {
+        return "长春-长春生物制品研究所有限责任公司-高生物安全风险车间智能化风险管理和实时动态监管平台"
+    }
+})
 
 function handleLink() {
      const timestampMs = Date.now();
@@ -90,7 +99,9 @@ onMounted(() => {
     <div class="title_box">
         <div class="title_box_content">
             <img src="/public/img/光标.png" alt="" />
-            <span @click="handleLink" style="cursor: pointer;">{{ address }}</span>
+            <span @click="handleLink" style="cursor: pointer;font-size: 9px;">
+                {{ targetTitle }}
+            </span>
         </div>
     </div>
     <div class="table_box">

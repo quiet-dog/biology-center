@@ -46,24 +46,24 @@ export function useAllCity() {
         {
             type: "人体生命数据数据",
             Url: wuhanUrl,
-            address: "哈兽研",
+            address: "中国农业科学院哈尔滨兽医研究所",
             component: markRaw(defineAsyncComponent(() => import("../../components/RenTiXiJie/index.vue"))),
             link: wuhan
         },
         {
             type: "浓度数据",
             Url: wuhanUrl,
-            address: "中疾控",
+            address: "中国疾控预防控制中心",
             component: markRaw(defineAsyncComponent(() => import("../../components/NongDuXiJie/index.vue"))),
             link: wuhan
         },
-        {
-            type: "阀门数据",
-            Url: wuhanUrl,
-            address: "建研院",
-            component: markRaw(defineAsyncComponent(() => import("../../components/FaMenXiJie/index.vue"))),
-            link: wuhan
-        },
+        // {
+        //     type: "阀门数据",
+        //     Url: wuhanUrl,
+        //     address: "建研院",
+        //     component: markRaw(defineAsyncComponent(() => import("../../components/FaMenXiJie/index.vue"))),
+        //     link: wuhan
+        // },
     ])
 
     return {
