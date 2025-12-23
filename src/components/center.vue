@@ -121,7 +121,7 @@ const address = ref([{
   }, {
     name: "中疾控",
     // url: "https://" + location.hostname + ":27677/api/manage/smAlarm/jinRiBaoJingNum",
-    url: "/wuhan/api/manage/smAlarm/jinRiBaoJingNum",
+    url: "/wuhan/api/manage/nongDuData/getJinRiBaoJing",
     total: 0,
     link: "https://" + location.hostname + ":7288/wuhan/#/ketisi",
     show: true
