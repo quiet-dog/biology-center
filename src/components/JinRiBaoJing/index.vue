@@ -18,22 +18,26 @@ const dataSource = ref([
     {
         address: "北京",
         num: 0,
-        url: "https://" + location.hostname + ":7677"+ "/api/manage/event/getTodayAlarmCount"
+        // url: "https://" + location.hostname + ":7677"+ "/api/manage/event/getTodayAlarmCount"
+        url: "/beijing/api/manage/event/getTodayAlarmCount"
     },
     {
         address: "长春",
         num: 0,
-        url: "https://" + location.hostname + ":17677"+ "/api/manage/event/getTodayAlarmCount"
+        // url: "https://" + location.hostname + ":17677"+ "/api/manage/event/getTodayAlarmCount"
+        url: "/changchun/api/manage/event/getTodayAlarmCount"
     },
     {
         address: "武汉",
         num: 0,
-        url: "https://" + location.hostname + ":27677"+ "/api/manage/event/getTodayAlarmCount"
+        // url: "https://" + location.hostname + ":27677"+ "/api/manage/event/getTodayAlarmCount"
+        url: "/wuhan/api/manage/event/getTodayAlarmCount"
     },
     {
         address: "哈尔滨",
         num: 0,
-        url: "https://" + location.hostname + ":27677"+"/api/manage/smAlarm/getJinRiAlarmNum"
+        // url: "https://" + location.hostname + ":27677"+"/api/manage/smAlarm/getJinRiAlarmNum"
+        url: "/wuhan/api/manage/smAlarm/getJinRiAlarmNum"
     }
 ])
 

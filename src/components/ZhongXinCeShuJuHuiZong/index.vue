@@ -15,7 +15,8 @@ import LvSe from "../../assets/center/ZhongXinCeShuJuHuiZong/绿色.png";
 import HongSe from "../../assets/center/ZhongXinCeShuJuHuiZong/红色.png";
 
 // const urls = reactive(["http://192.168.1.141:9200", "http://192.168.1.141:9200", "http://192.168.1.141:9200"])
-const urls = reactive(["https://"+location.hostname+":7677", "https://"+location.hostname+":27677", "https://"+location.hostname+":17677"])
+// const urls = reactive(["https://"+location.hostname+":7677", "https://"+location.hostname+":27677", "https://"+location.hostname+":17677"])
+const urls = reactive(["/beijing", "/wuhan", "/changchun"])
 
 const tableList = ref([{
     source: '北京',

@@ -264,23 +264,4 @@ $design-height: 1080;
     margin-bottom: adaptiveHeight(5);
 }
 
-
-// .table_box_content_item span {
-//     text-align: center; // 文字居中
-//     white-space: nowrap; // 不换行
-//     overflow: hidden; // 超出隐藏
-//     text-overflow: ellipsis; // 超出显示省略号
-// }
-
-// // 可选：如果最左最右 span 不需要占剩余空间
-// .table_box_content_item span:first-child {
-//     text-align: left;
-//     flex: 1; // 每个 span 占等宽
-// }
-
-
-
-// .table_box_content_item span:last-child {
-//     text-align: right;
-//     flex: 1; // 每个 span 占等宽
-// }</style>
+</style>

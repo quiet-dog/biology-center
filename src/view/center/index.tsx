@@ -1,13 +1,16 @@
-import { reactive, ref } from "vue";
+import { reactive, } from "vue";
 
 export function useAllCity() {
-    const beiJing = "https://" + location.hostname + ":7677/#/home"
-    const wuhan = "https://" + location.hostname + ":27677/#/home"
-    const changChun = "https://" + location.hostname + ":17677/#/home"
+    const beiJing = "https://" + location.hostname + ":7288/beijing/#/home"
+    const wuhan = "https://" + location.hostname + ":7288/wuhan/#/home"
+    const changChun = "https://" + location.hostname + ":7288/changchun/#/home"
 
-    const beiJingUrl = "https://" + location.hostname + ":7677"
-    const wuhanUrl = "https://" + location.hostname + ":27677"
-    const changChunUrl = "https://" + location.hostname + ":17677"
+    // const beiJingUrl = "https://" + location.hostname + ":7677"
+    // const wuhanUrl = "https://" + location.hostname + ":27677"
+    // const changChunUrl = "https://" + location.hostname + ":17677"
+    const beiJingUrl = "/beijing"
+    const wuhanUrl = "/wuhan"
+    const changChunUrl = "/changchun"
 
     const leftConfig = reactive([
         {

@@ -87,13 +87,13 @@ const address = ref([{
   top: adaptiveHeight(3000),
   img: JiaoBiao,
   title: "武汉",
-  link: "https://" + location.hostname + ":27677/#/home",
+  link: "https://" + location.hostname + ":7288/wuhan/#/home",
   total: 0,
   labels: [{
     name: "武汉",
     url: "https://" + location.hostname + ":27677/api/manage/event/getTodayAlarmCount",
     total: 0,
-    link: "https://" + location.hostname + ":27677/#/home",
+    link: "https://" + location.hostname + ":7288/wuhan/#/home",
     show: true
   },
   //  {
@@ -110,18 +110,20 @@ const address = ref([{
   img: JiaoBiao,
   title: "北京",
   total: 0,
-  link: "https://" + location.hostname + ":7677/#/home",
+  link: "https://" + location.hostname + ":7288/beijing/#/home",
   labels: [{
     name: "北京",
-    url: "https://" + location.hostname + ":7677/api/manage/event/getTodayAlarmCount",
+    // url: "https://" + location.hostname + ":7677/api/manage/event/getTodayAlarmCount",
+    url: "/beijing/api/manage/event/getTodayAlarmCount",
     total: 0,
-    link: "https://" + location.hostname + ":7677/#/home",
+    link: "https://" + location.hostname + ":7288/beijing/#/home",
     show: true
   }, {
     name: "中疾控",
-    url: "https://" + location.hostname + ":27677/api/manage/smAlarm/jinRiBaoJingNum",
+    // url: "https://" + location.hostname + ":27677/api/manage/smAlarm/jinRiBaoJingNum",
+    url: "/wuhan/api/manage/smAlarm/jinRiBaoJingNum",
     total: 0,
-    link: "https://" + location.hostname + ":27677/#/ketisi",
+    link: "https://" + location.hostname + ":7288/wuhan/#/ketisi",
     show: true
   }]
 }, {
@@ -129,12 +131,13 @@ const address = ref([{
   top: adaptiveHeight(1100),
   img: JiaoBiao,
   title: "长春",
-  link: "https://" + location.hostname + ":17677/#/home",
+  link: "https://" + location.hostname + ":7288/changchun/#/home",
   labels: [{
     name: "长春",
-    url: "https://" + location.hostname + ":17677/api/manage/event/getTodayAlarmCount",
+    // url: "https://" + location.hostname + ":17677/api/manage/event/getTodayAlarmCount",
+    url: "/changchun/api/manage/event/getTodayAlarmCount",
     total: 0,
-    link: "https://" + location.hostname + ":17677/#/home",
+    link: "https://" + location.hostname + ":7288/changchun/#/home",
     show: true
   }],
   total: 0,
@@ -143,13 +146,15 @@ const address = ref([{
   top: adaptiveHeight(800),
   img: JiaoBiao,
   title: "哈尔滨",
-  link: "https://" + location.hostname + ":17677/#/home",
+  link: "https://" + location.hostname + ":7288/wuhan/#/home",
   total:0,
   labels: [{
     name: "哈尔滨",
-    url: "https://" + location.hostname + ":17677/api/manage/event/getTodayAlarmCount",
+    // url: "https://" + location.hostname + ":17677/api/manage/event/getTodayAlarmCount",
+    url:"",
     total: 0,
-    link: "https://" + location.hostname + ":17677/#/home",
+    link: "https://" + location.hostname + ":7288/wuhan/#/home",
+    // link: "",
     show: true
   },
   // {
