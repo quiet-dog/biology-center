@@ -56,7 +56,7 @@ export function useAllCity() {
         {
             type: "浓度数据",
             Url: wuhanUrl,
-            address: "中国疾控预防控制中心",
+            address: "中国疾病预防控制中心",
             component: markRaw(defineAsyncComponent(() => import("../../components/NongDuXiJie/index.vue"))),
             link: wuhan
         },
