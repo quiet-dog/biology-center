@@ -22,7 +22,7 @@
                 <el-badge v-if="label.show" :value="label.total">
                   <!-- <el-button type="primary" text> -->
                   <span class="text-style" @click="handleLink(label.link)" style="cursor: pointer;">{{ label.name
-                  }}</span>
+                    }}</span>
                   <!-- </el-button> -->
                 </el-badge>
                 <span v-else class="text-style" style="cursor: pointer;">
@@ -91,19 +91,19 @@ const address = ref([{
   total: 0,
   labels: [{
     name: "武汉",
-    url: "https://" + location.hostname + ":27677/api/manage/event/getTodayAlarmCount",
+    url: "/wuhan/api/manage/event/getTodayAlarmCount",
     total: 0,
     link: "https://" + location.hostname + ":7288/wuhan/#/home",
     show: true
   },
-  //  {
-  //   name: "建研院",
-  //   url: "https://" + location.hostname + ":27677/api/manage/smAlarm/jinRiBaoJingNum",
-  //   total: 0,
-  //   link: "https://" + location.hostname + ":27677/#/ketisi",
-  //   show: false
-  // }
-]
+    //  {
+    //   name: "建研院",
+    //   url: "https://" + location.hostname + ":27677/api/manage/smAlarm/jinRiBaoJingNum",
+    //   total: 0,
+    //   link: "https://" + location.hostname + ":27677/#/ketisi",
+    //   show: false
+    // }
+  ]
 }, {
   left: adaptiveWidth(6600),
   top: adaptiveHeight(1675),
@@ -141,30 +141,30 @@ const address = ref([{
     show: true
   }],
   total: 0,
-},{
+}, {
   left: adaptiveWidth(7800),
   top: adaptiveHeight(800),
   img: JiaoBiao,
   title: "哈尔滨",
   link: "https://" + location.hostname + ":7288/wuhan/#/home",
-  total:0,
+  total: 0,
   labels: [{
     name: "哈尔滨",
     // url: "https://" + location.hostname + ":17677/api/manage/event/getTodayAlarmCount",
-    url:"",
+    url: "",
     total: 0,
     link: "https://" + location.hostname + ":7288/wuhan/#/home",
     // link: "",
     show: true
   },
-  // {
-  //   name: "哈兽研",
-  //   url: "https://" + location.hostname + ":27677/api/manage/smAlarm/getJinRiAlarmNum",
-  //   total: 0,
-  //   link: "https://" + location.hostname + ":27677/#/ketisan",
-  //   show: true
-  // }
-]
+    // {
+    //   name: "哈兽研",
+    //   url: "https://" + location.hostname + ":27677/api/manage/smAlarm/getJinRiAlarmNum",
+    //   total: 0,
+    //   link: "https://" + location.hostname + ":27677/#/ketisan",
+    //   show: true
+    // }
+  ]
 }])
 
 const getAllEventTimer = useIntervalFn(() => {
@@ -177,7 +177,7 @@ const getAllEventTimer = useIntervalFn(() => {
         headers: { Authorization: "Bearer MASTER_TOKEN_123456" }
       })
       if (res.data?.data?.num) {
-      	label.total = res.data.data.num;
+        label.total = res.data.data.num;
         num += res.data.data.num
       }
     }
